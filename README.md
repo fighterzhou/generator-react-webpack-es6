@@ -1,10 +1,8 @@
-#React Pack Staging
+#Generator React-Webpack-ES6
 
 ### Unfinished, fighting...
 
-Simple Staging To Create React Projects
-
-// [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url]
+Simple Generator To Create React Project With Webpack & ES6
 
 ## Features
 
