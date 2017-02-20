@@ -1,8 +1,10 @@
 #React Pack Staging
 
+### Unfinished, fighting...
+
 Simple Staging To Create React Projects
 
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url]
+// [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url]
 
 ## Features
 
