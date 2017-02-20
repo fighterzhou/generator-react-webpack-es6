@@ -1,0 +1,33 @@
+import { combineReducers } from 'redux';
+import * as ActionTypes from './action-types';
+<%_if(router) { -%>
+    <%_if(ie8) { _%>
+import { routerReducer } from 'react-router-redux-ie8';
+    <%_}else{-%>
+import { routerReducer } from 'react-router-redux';
+    <%_}-%>
+<%_}-%>
+
+const initAppState = { data: 'Hello World with redux!'};
+
+function appState(state = initAppState, action) {
+  switch (action.type) {
+    case ActionTypes.SYNC_ACTION: {
+      return { ...state, data: action.data }
+    }
+    case ActionTypes.REQUEST_ASYNC_ACTION: {
+      return { ...state }
+    }
+    case ActionTypes.SUCCESS_ASYNC_ACTION: {
+      return { ...state, data: action.data }
+    }
+    case ActionTypes.FAIL_ASYNC_ACTION: {
+      return { ...state, data: action.data}
+    }
+    default: {
+      return state;
+    }
+  }
+}
+
+export default combineReducers({ appState, })
